@@ -1,0 +1,3 @@
+- add noreferrer thing to anchor tags (https://www.freecodecamp.org/news/how-to-use-html-to-open-link-in-new-tab/)
+- try again at dark mode toggle
+- try again to get puzzle numbers and creators in line with their tags (maybe this will be helpful: https://www.internetingishard.com/html-and-css/floats/)

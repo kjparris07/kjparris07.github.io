@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- <button type="button" onclick="toggleColor()">change to dark mode</button> -->
+        <div id="headings">
+            <h2>Puzzle: </h2><h2 id="puzzleNum">0</h2>
+            <h4>by </h4><h4 id="creator"></h4>
+        </div>
+
+        <div class="row" id="first">
+            <div class="box" onclick="toggle()"><input type="text" value="0" maxlength="1"></div>
+            <div class="box" onclick="toggle()"><input type="text" value="0" maxlength="1"></div>
+            <div class="box" onclick="toggle()"><input type="text" value="0" maxlength="1"></div>
+            <div class="box" onclick="toggle()"><input type="text" value="0" maxlength="1"></div>
+            <div class="box" onclick="toggle()"><input type="text" value="0" maxlength="1"></div>
+            <div class="box" onclick="toggle()"><input type="text" value="0" maxlength="1"></div>
+        </div>
+        <div class="row">
+            <div class="box" onclick="toggle()"><input type="text" value="0" maxlength="1"></div>
+            <div class="box" onclick="toggle()"><input type="text" value="0" maxlength="1"></div>
+            <div class="box" onclick="toggle()"><input type="text" value="0" maxlength="1"></div>
+            <div class="box" onclick="toggle()"><input type="text" value="0" maxlength="1"></div>
+            <div class="box" onclick="toggle()"><input type="text" value="0" maxlength="1"></div>
+            <div class="box" onclick="toggle()"><input type="text" value="0" maxlength="1"></div>
+        </div>
+        <div class="row">
+            <div class="box" onclick="toggle()"><input type="text" value="0" maxlength="1"></div>
+            <div class="box" onclick="toggle()"><input type="text" value="0" maxlength="1"></div>
+            <div class="box" onclick="toggle()"><input type="text" value="0" maxlength="1"></div>
+            <div class="box" onclick="toggle()"><input type="text" value="0" maxlength="1"></div>
+            <div class="box" onclick="toggle()"><input type="text" value="0" maxlength="1"></div>
+            <div class="box" onclick="toggle()"><input type="text" value="0" maxlength="1"></div>
+        </div>
+        <div class="row">
+            <div class="box" onclick="toggle()"><input type="text" value="0" maxlength="1"></div>
+            <div class="box" onclick="toggle()"><input type="text" value="0" maxlength="1"></div>
+            <div class="box" onclick="toggle()"><input type="text" value="0" maxlength="1"></div>
+            <div class="box" onclick="toggle()"><input type="text" value="0" maxlength="1"></div>
+            <div class="box" onclick="toggle()"><input type="text" value="0" maxlength="1"></div>
+            <div class="box" onclick="toggle()"><input type="text" value="0" maxlength="1"></div>
+        </div>
+        <div class="row">
+            <div class="box" onclick="toggle()"><input type="text" value="0" maxlength="1"></div>
+            <div class="box" onclick="toggle()"><input type="text" value="0" maxlength="1"></div>
+            <div class="box" onclick="toggle()"><input type="text" value="0" maxlength="1"></div>
+            <div class="box" onclick="toggle()"><input type="text" value="0" maxlength="1"></div>
+            <div class="box" onclick="toggle()"><input type="text" value="0" maxlength="1"></div>
+            <div class="box" onclick="toggle()"><input type="text" value="0" maxlength="1"></div>
+        </div>
+        <div class="row" id="last">
+            <div class="box" onclick="toggle()"><input type="text" value="0" maxlength="1"></div>
+            <div class="box" onclick="toggle()"><input type="text" value="0" maxlength="1"></div>
+            <div class="box" onclick="toggle()"><input type="text" value="0" maxlength="1"></div>
+            <div class="box" onclick="toggle()"><input type="text" value="0" maxlength="1"></div>
+            <div class="box" onclick="toggle()"><input type="text" value="0" maxlength="1"></div>
+            <div class="box" onclick="toggle()"><input type="text" value="0" maxlength="1"></div>
+        </div>
+
+        <div id="buttons">
+            <button type="button" onclick="enable()">edit</button>
+            <button type="button" onclick="disable()">done editing</button>
+            <button type="button" onclick="reset()">reset</button>
+            <button type="button" onclick="nextPuzzle()">next puzzle</button>
+        </div>
+
+        <div id="fill">
+            <input type="text" size="36" maxlength="38" placeholder="642359538441173319[1]24587358731931636" id="fillBox">
+            <button type="button" onclick="fillFromBox()">fill</button>
+        </div>
+
+        <div id="notes">
+            <ul>
+                <li>&ensp;note: this program only works with one given value</li>
+                <li>&ensp;please surround the given value with brackets (like: 12[3]456)</li>
+                <li>&ensp;there are only 12 puzzles at this time</li>
+            </ul>
+
+        </div>
+
+        <script type="text/javascript" src="scripts.js"></script>
+    </body>
+</html>
