@@ -1,5 +1,4 @@
 function toggleNavBar() {
-    console.log("toggleNavBar()")
     var linkContainer = document.getElementById("links");
     
     if (linkContainer.classList.length == 0) {
@@ -10,7 +9,8 @@ function toggleNavBar() {
     console.log(linkContainer.classList);
 }
 
-function scrollToAbout() {
-    var screenHeight = window.innerHeight;
-    window.scroll({top: screenHeight, left: 0, behavior: "smooth"});
+function scrollToElement(id) {
+    var element = document.getElementById(id)
+    var top = element.getBoundingClientRect().top;
+    window.scroll({top: top + window.scrollY - 60, left: 0, behavior: "smooth"});
 }
