@@ -1,12 +1,8 @@
 function toggleNavBar() {
-    var linkContainer = document.getElementById("links");
-    
-    if (linkContainer.classList.length == 0) {
-        linkContainer.classList.add("active");
-    } else {
-        linkContainer.classList.remove("active");
-    }
-    console.log(linkContainer.classList);
+    var links = document.getElementById("links");
+
+    links.classList.add('allow-transition');
+    links.classList.toggle('active');
 }
 
 function scrollToElement(id) {
@@ -14,3 +10,13 @@ function scrollToElement(id) {
     var top = element.getBoundingClientRect().top;
     window.scroll({top: top + window.scrollY - 60, left: 0, behavior: "smooth"});
 }
+
+function handleResize() {
+    const links = document.getElementById("links");
+    if (window.innerWidth > 965) {
+        links.classList.remove("allow-transition");
+        links.classList.remove("active");
+    }
+}
+
+window.addEventListener("resize", handleResize);

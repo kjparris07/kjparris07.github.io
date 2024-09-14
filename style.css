@@ -10,7 +10,6 @@
     padding: 0;
     box-sizing: border-box;
     color: var(--dark-text);
-    font-family: "Open Sans", sans-serif;
 }
 
 body {
@@ -29,6 +28,10 @@ h1, h2, h3, h4, h5, h6 {
 
 ul {
     list-style: none;
+} 
+
+p {
+    font-family: "Open Sans", sans-serif;
 }
 
 .navbar {
@@ -191,6 +194,15 @@ ul {
         border-radius: 15px 0 0 15px;
     }
 
+    .navbar #links.allow-transition {
+        transition: transform 0.4s ease, opacity 0.4s ease;
+    }
+
+    .navbar #links.active {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
     .navbar #links a {
         padding: 15px;
     }
@@ -199,12 +211,6 @@ ul {
         background-color: var(--umber);
         color: var(--light-text);
         border-radius: 15px 0 0 15px;
-    }
-
-    .navbar #links.active {
-        transform: translateX(0);
-        opacity: 1;
-        transition: transform 0.4s ease, opacity 0.4s ease-in-out;
     }
 
     .caret {
