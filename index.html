@@ -11,12 +11,12 @@
     </head>
     <body>
         <a id="top"></a>
+        <div class="clear-overlay" id="overlay1" onclick="closeNavBar()"></div>
+        <div class="clear-overlay" id="overlay2" onclick="closeNavBar()"></div>
         <nav class="navbar">
             <div id="name">
                 <a onclick="scrollToElement('top')">Kyra Parris</a>
-                <div id="toggle" onclick="toggleNavBar()">
-                    <a><i class="fa-solid fa-bars"></i></a>
-                </div>
+                
             </div>
             
             <div id="links">
@@ -27,9 +27,10 @@
                 <a href="https://www.cottage-kore.com" target="_blank">Shop</a>
                 <a onclick="scrollToElement('contact')"">Contact Me</a>
             </div>
-            
         </nav>
-        <div></div>
+        <div id="toggle" onclick="toggleNavBar()">
+            <a><i class="fa-solid fa-bars"></i></a>
+        </div>
         
         <div id="about">
             <div id="intro">
@@ -61,16 +62,22 @@
 
         <div id="comp-sci" class="section">
             <h2 class="header">Computer Science</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores sunt harum sint mollitia unde exercitationem neque accusantium qui, iste, perferendis quis molestias ipsum distinctio tempore omnis optio reprehenderit quidem adipisci eligendi dolore dolores laboriosam et porro? Facilis eum quidem cum iusto. Tenetur et nulla possimus, commodi ipsam distinctio sed vitae!
-            </p>
+            <div class="row">
+                <div class="card" id="card1">
+                    <img src="imgs/gray-square.png" alt="a gray square">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione laborum ea, voluptatem neque earum recusandae facilis ex atque repellat exercitationem.</p>
+                </div>
 
-            <p> 
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, sed enim velit harum esse odit molestiae amet a vero inventore tenetur ea aspernatur, adipisci quasi, provident quibusdam dolorem ratione! Sint repellendus rerum quod laudantium. Exercitationem accusantium maiores debitis laudantium dolorum. Dicta iusto inventore aut cupiditate voluptas veniam explicabo nulla, rerum optio eius necessitatibus illo! Ipsam ut non error voluptates numquam officiis corrupti? Doloribus, at. Numquam vitae architecto iusto modi in accusamus, consectetur facere autem explicabo?
-            </p>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia iste accusantium quos rerum possimus quas quaerat. Nemo sunt est nesciunt illo quas itaque. Adipisci sapiente aperiam quas aut? Sint tempora officia deleniti nesciunt magnam cumque hic delectus, similique quam quae.
-            </p>
+                <div class="card" id="card2">
+                    <img src="imgs/gray-square.png" alt="a gray square">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel suscipit eius ex perferendis, adipisci eos! At libero tenetur ipsum sequi?</p>
+                </div>  
+
+                <div class="card" id="card3">
+                    <img src="imgs/gray-square.png" alt="a gray square">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, dolor! Nulla ullam cupiditate placeat quisquam accusamus eveniet aliquam fugiat magni.</p>
+                </div>
+            </div>
 
             <i class="fa-solid fa-caret-down caret" id="caret3" onclick="scrollToElement('fine-arts')"></i>
         </div>

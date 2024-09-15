@@ -1,8 +1,15 @@
 function toggleNavBar() {
     var links = document.getElementById("links");
 
-    links.classList.add('allow-transition');
-    links.classList.toggle('active');
+    links.classList.add("allow-transition");
+    links.classList.toggle("active");
+}
+
+function closeNavBar() {
+    var links = document.getElementById("links");
+
+    links.classList.add("allow-transition");
+    links.classList.remove("active");
 }
 
 function scrollToElement(id) {
