@@ -26,4 +26,11 @@ function handleResize() {
     }
 }
 
+function handleClick() {
+    closeNavBar();
+}
+
 window.addEventListener("resize", handleResize);
+
+// const form = document.getElementsByTagName("form");
+// form.addEventListener("click", handleClick);
