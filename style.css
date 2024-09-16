@@ -282,8 +282,22 @@ form input, textarea {
 
 form #submit {
     margin: 25px auto;
-    width: 60px;
-    height: 25px;
+    background-color: var(--light-text);
+    color: var(--dark-text);
+    padding: 10px 15px;
+    font-size: 18px;
+    line-height: 18px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    border: 2px solid var(--dark-sage)
+}
+
+form #submit:hover {
+    background-color: var(--dark-sage);
+    color: var(--light-text);
+    border: 2px solid var(--light-text);
+    transition: background-color 0.3s ease;
 }
 
 @media screen and (max-width: 965px) {
