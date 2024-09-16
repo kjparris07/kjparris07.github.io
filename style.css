@@ -19,7 +19,6 @@ body {
 }
 
 a {
-    text-decoration: none;
     color: inherit;
 }
 
@@ -43,6 +42,10 @@ p {
     font-family: "EB Garamond", serif;
     position: fixed;
     z-index: 4;
+}
+
+.navbar a {
+    text-decoration: none;
 }
 
 .navbar #name {
@@ -202,7 +205,24 @@ p {
     box-shadow: 0 4px 16px var(--dark-sage);
 }
 
+#comp-sci .project-links {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+}
+
+#comp-sci .project-links a {
+    
+}
+
+#comp-sci .project-links a:hover {
+    color: var(--dark-sage);
+}
+
 #fine-arts {
+    background-color: var(--light-text);
 }
 
 #fine-arts .card {
@@ -244,6 +264,11 @@ p {
 .card img {
     width: 100%;
     border-radius: 10px 10px 0 0;
+}
+
+.card .project-links a {
+    font-family: "Open Sans", sans-serif;
+    z-index: 5;
 }
 
 form {
