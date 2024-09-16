@@ -141,18 +141,23 @@ p {
 
 #description .caret {
     position: relative;
+    margin-top: 100px;
 }
 
 #comp-sci .caret {
     position: relative;
+    margin-top: 50px;
 }
 
 #fine-arts .caret {
     position: relative;
+    margin-top: 50px;
 }
 
 .section {
     text-align: center;
+    min-height: 100vh;
+    max-height: fit-content;
 }
 
 .section h2 {
@@ -161,8 +166,6 @@ p {
 
 #description {
     font-size: 18px;
-    height: 100vh;
-    min-height: fit-content;
     text-align: center;
 }
 
@@ -192,16 +195,21 @@ p {
 }
 
 #comp-sci {
-    height: 100vh;
     background-color: var(--sage);
 }
 
+#comp-sci .card {
+    box-shadow: 0 4px 16px var(--dark-sage);
+}
+
 #fine-arts {
-    height: 100vh;
+}
+
+#fine-arts .card {
+    box-shadow: 0 4px 16px #c4c4c4;
 }
 
 #contact {
-    height: 100vh;
     background-color: var(--sage);
 }
 
@@ -222,7 +230,6 @@ p {
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    box-shadow: 0 8px 16px var(--dark-sage);
     font-size: 16px;
 }
 
@@ -244,10 +251,10 @@ form {
     flex-direction: column;
     width: 60%;
     margin: 0 auto;
-    font-family: "Open Sans", sans-serif;
     align-items: center;
     position: relative ;
     z-index: 5;
+    font-family: "Open Sans", sans-serif;
 }
 
 form .row {
@@ -268,6 +275,8 @@ form input {
 form input, textarea {
     width: 200px;
     margin: 5px auto 10px auto;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
 }
 
 
