@@ -1,7 +1,7 @@
 let draggedElement = null;
 let offsetX = 0;
 let offsetY = 0;
-let taskBase = "n<button onclick='deleteTask(this)'>x</button>"
+let taskBase = "<button onclick='deleteTask(this)'>x</button>n";
 
 function move(event) {
     if (draggedElement) {
@@ -30,34 +30,28 @@ function mouseUp(event) {
     if (elementUnder[0].classList.contains("tasks") && elementUnder[1].classList.contains("container")) {
         let oldParent = draggedElement.parentNode;
         elementUnder[1].appendChild(draggedElement);
-        let index = Array.prototype.indexOf.call(elementUnder[1].children, draggedElement);
-        let height = 10;
-
-        if (index >= 1) {
-            let sibling = elementUnder[1].children[index-1].getBoundingClientRect();
-            height += sibling.height + sibling.top;
-        }
-        
-        draggedElement.style.position = "absolute";
-        draggedElement.style.top = height + "px";
-        draggedElement.style.left = "10%";
 
         updateContainer(oldParent);
     } 
+
+    if (draggedElement) {
+        draggedElement.style.position = "absolute";
+        updateContainer(draggedElement.parentNode);
+    }
 
     draggedElement = null;
     window.removeEventListener("mousemove", move);
 }
 
 function updateContainer(obj) {
+    let topPosition = 10;
     for (var i=0; i < obj.children.length; i++) {
-        if (i === 0) {
-            obj.children[i].style.top = "10px";
-        } else {
-            let sibling = obj.children[i-1].getBoundingClientRect();
-            obj.children[i].style.top = sibling.height + sibling.top + 10 + "px";
-        }
-        
+        let child = obj.children[i];
+        child.style.position = "absolute";
+        child.style.top = topPosition + "px";
+        child.style.left = "10%";
+
+        topPosition += child.offsetHeight + 10;
     }
 }
 
@@ -77,6 +71,17 @@ function addTask() {
     updateContainer(container);
 }
 
+function resizeElements() {
+    let containers = document.querySelectorAll(".container");
+    for (var i=0; i<containers.length; i++) {
+        for (var j=0; j<containers[i].children.length; j++) {
+            containers[i].children[j].style.width= containers[i].getBoundingClientRect().width*0.8 + "px";
+            containers[i].children[j].style.left = "10%";
+        }
+    }
+}
+
 updateContainer(document.getElementsByClassName("container")[0]);
 window.addEventListener("mousedown", mouseDown);
 window.addEventListener("mouseup", mouseUp);
+window.addEventListener("resize", resizeElements);

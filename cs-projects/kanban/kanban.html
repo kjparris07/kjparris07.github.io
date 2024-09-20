@@ -8,13 +8,26 @@
 </head>
 <body>
     <button onclick="addTask()">+</button>
-    <div class="container">
-        <div class="tasks">1<button onclick="deleteTask(this)">x</button></div>
-        <div class="tasks">2<button onclick="deleteTask(this)">x</button></div>
-        <div class="tasks">3<button onclick="deleteTask(this)">x</button></div>
+
+    <div id="headers">
+        <h2>To Do</h2>
+        <h2>Planned</h2>
+        <h2>In Progress</h2>
+        <h2>Overdue</h2>
+        <h2>Completed</h2>
     </div>
-    <div class="container"></div>
-    <div class="container"></div>
+    <div id="board">
+        <div class="container" id="newTasks">
+            <div class="tasks"><button onclick="deleteTask(this)">x</button>1</div>
+            <div class="tasks"><button onclick="deleteTask(this)">x</button>2</div>
+            <div class="tasks"><button onclick="deleteTask(this)">x</button>3</div>
+        </div>
+        <div class="container"></div>
+        <div class="container"></div>
+        <div class="container"></div>
+        <div class="container"></div>
+    </div>
+    
     <script src="kanbanScripts.js"></script>
 </body>
 </html>
