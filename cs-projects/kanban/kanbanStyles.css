@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    width: 100px;
+    height: 100vh;
+    background-color: gainsboro;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+}
+
+.tasks {
+    width: 80%;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    display: block;
+    z-index: 10;
+    padding-bottom: 10px;
+    left: 10%;
+}
+
