@@ -114,7 +114,7 @@ p {
 }
 
 #intro {
-    display: table;
+    margin-bottom: 20vh;
 }
 
 #about h1 {
