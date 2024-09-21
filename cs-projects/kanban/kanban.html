@@ -3,31 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productivity Board</title>
+    <title>Kanban Board</title>
     <link rel="stylesheet" href="kanbanStyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <button onclick="addTask()">+</button>
-
-    <div id="headers">
-        <h2>To Do</h2>
-        <h2>Planned</h2>
-        <h2>In Progress</h2>
-        <h2>Overdue</h2>
-        <h2>Completed</h2>
-    </div>
-    <div id="board">
-        <div class="container" id="newTasks">
-            <div class="tasks"><button onclick="deleteTask(this)">x</button>1</div>
-            <div class="tasks"><button onclick="deleteTask(this)">x</button>2</div>
-            <div class="tasks"><button onclick="deleteTask(this)">x</button>3</div>
+    <header>
+        <h1>Productivity Board</h1>
+        <div id="taskInput">
+            <input type="text" id="taskText" placeholder="Enter Task Here">
+            <button onclick="addTask()" id="addTask">Add Task</button>
         </div>
-        <div class="container"></div>
-        <div class="container"></div>
-        <div class="container"></div>
-        <div class="container"></div>
+        
+    </header>
+    
+
+    <div id="board">  
+        <div class="container" id="todo">
+            <h3 class="label">To Do</h3>
+            <div class="tasks"><div class="text"><i class="fa-solid fa-xmark" onclick="deleteTask(this)"></i>Put away laundry</div></div>
+        </div>
+        <div class="container" id="planned">
+            <h3 class="label">Planned</h3>
+            <div class="tasks"><div class="text"><i class="fa-solid fa-xmark" onclick="deleteTask(this)"></i>Water plants</div></div>
+        </div>
+        <div class="container" id="progress">
+            <h3 class="label">In Progress</h3>
+            <div class="tasks"><div class="text"><i class="fa-solid fa-xmark" onclick="deleteTask(this)"></i>Study for test</div></div>
+        </div>
+        <div class="container" id="overdue">
+            <h3 class="label">Overdue</h3>
+        </div>
+        <div class="container" id="completed">
+            <h3 class="label">Completed</h3>
+        </div>
     </div>
     
+    <script src="https://kit.fontawesome.com/c122dadac2.js" crossorigin="anonymous"></script>
     <script src="kanbanScripts.js"></script>
 </body>
 </html>
