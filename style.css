@@ -213,10 +213,6 @@ p {
     padding-bottom: 20px;
 }
 
-#comp-sci .project-links a {
-    
-}
-
 #comp-sci .project-links a:hover {
     color: var(--dark-sage);
 }
@@ -325,8 +321,17 @@ form #submit:hover {
     transition: background-color 0.3s ease;
 }
 
+@media screen and (width > 965px) {
+    #overlay2 {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 965px) {
-    
+    #overlay2 {
+        display: block;
+    }
+
     .navbar #name {
         width: 100%;
     }
