@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KP Portfolio</title>
+    <link rel="stylesheet" href="techStyles.css">
+</head>
+
+<body>
+    <header>
+        <ul>
+            <a href="home.html"><li class="mainLi">Home</li></a>
+            <li class="mainLi" onclick="swapPageSection('home.html', 'about')"><a>About</a></li>
+            <li class="mainLi" onclick="toggleDropDown('dropdown1')"><a>Projects <i class="fa-solid fa-caret-down"></i></a>
+                <ul class="dropdown" id="dropdown1">
+                    <li class="secondaryLi"><a href="resume.html">Resume</a></li>
+                    <li class="secondaryLi"><a href="cover-letter.html">Cover Letter</a></li>
+                    <li class="secondaryLi"><a href="correspondence.html">Correspondence</a></li>
+                    <li class="secondaryLi"><a href="infographic.html">Infographic</a></li>
+                    <li class="secondaryLi"><a href="tutorial.html">Tutorial Video</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+
+    
+    <div id="projectBody">
+        <h2>Tutorial Video</h2>
+        <br><br>
+            <div class="card cols two-equal-cols left-col">
+                <h4>Description</h4>
+                <br>
+                <p>For this assignment, my partner and I were tasked with creating a tutorial video and accompanying materials on the topic of our choice. We chose to create instructions to upload a Google Document to Canvas.</p>
+                <br><br><br>
+                <h4>Reflection</h4>
+                <br>
+                <p>The main challenge that I encountered in the process of creating this video was keeping the video brief while still including enough steps to make it easy to follow.</p>
+                <br>
+                <p>Additionally, I learned that my inclination is to go into as much detail as possible, which many situations do not call for.</p>
+                <br>
+            </div>
+            
+            <div class="card cols two-equal-cols right-col">
+                <h4>Video</h4> <br>
+                <video controls>
+                    <source src="imgs/Tutorial-Video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p><a href="https://drive.google.com/file/d/1Cd5wGt6iKMoH5cxluv7WNWBLyjOuguW6/view?usp=drive_link" target="_blank">(click to open in new tab)</a></p>
+                <br>
+                <h4>Instruction Set</h4> <br>
+                <a href="https://drive.google.com/file/d/1_8Z-r2Q4UTnPp2itRneKBZ13Vh_RoohC/view?usp=sharing" target="_blank"><img src="imgs/instruction-set_tn.jpg" alt="a powerpoint cover page"></a>
+                
+                <p><a href="https://drive.google.com/file/d/1_8Z-r2Q4UTnPp2itRneKBZ13Vh_RoohC/view?usp=sharing" target="_blank">(click to open in new tab)</a></p>
+                <br>
+            </div>
+        
+    </div>
+    
+    <script src="techScripts.js"></script>
+    <script src="https://kit.fontawesome.com/c122dadac2.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KP Portfolio</title>
+    <link rel="stylesheet" href="techStyles.css">
+</head>
+
+<body>
+    <header>
+        <ul>
+            <a href="home.html"><li class="mainLi">Home</li></a>
+            <li class="mainLi" onclick="swapPageSection('home.html', 'about')"><a>About</a></li>
+            <li class="mainLi" onclick="toggleDropDown('dropdown1')"><a>Projects <i class="fa-solid fa-caret-down"></i></a>
+                <ul class="dropdown" id="dropdown1">
+                    <li class="secondaryLi"><a href="resume.html">Resume</a></li>
+                    <li class="secondaryLi"><a href="cover-letter.html">Cover Letter</a></li>
+                    <li class="secondaryLi"><a href="correspondence.html">Correspondence</a></li>
+                    <li class="secondaryLi"><a href="infographic.html">Infographic</a></li>
+                    <li class="secondaryLi"><a href="tutorial.html">Tutorial Video</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+
+    
+    <div id="projectBody">
+        <h2>Cover Letter</h2>
+        <br><br>
+            <div class="card cols skinny-col left-skinny-col">
+                <h4>Letter</h4>
+                <br>
+                <a href="https://docs.google.com/document/d/1m0p-eYbAF8IepiRG-bOTcp0p06HIOt7SuR3Kej1L1j0/edit?usp=drive_link" target="_blank"><img src="imgs/Cover-Letter.png" alt="a screenshot of a cover letter"></a>
+                
+                <p><a href="https://docs.google.com/document/d/1m0p-eYbAF8IepiRG-bOTcp0p06HIOt7SuR3Kej1L1j0/edit?usp=drive_link" target="_blank">(click to open in new tab)</a></p>
+            </div>
+            <div class="card cols wide-col right-wide-col">
+                <h4>Description</h4>
+                <br>
+                <p>For this assignment, I was tasked with creating a cover letter addressed to a potential employer, proving myself as a capable candidate. </p>
+                <br><br>
+                <h4>Reflection</h4>
+                <br>
+                <p>The main challenge that I encountered in this assignment was speaking about myself confidently enough without coming across as boastful. Often, simple confidence comes across as vain to me, so I have to push through those feelings to make sure the cover letter can serve its purpose. </p>
+                <br>
+                <p>I learned that cover letters are very specific to each position because they require you to tailor your strengths to what the employer is specifically seeking. Also, I learned that some of my more general job experiences – like retail or service work – still demonstrate skills to employers, like strong communication or problem-solving.</p>
+            </div>
+        
+    </div>
+    
+    <script src="techScripts.js"></script>
+    <script src="https://kit.fontawesome.com/c122dadac2.js" crossorigin="anonymous"></script>
+</body>
+</html>

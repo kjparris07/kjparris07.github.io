@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KP Portfolio</title>
+    <link rel="stylesheet" href="techStyles.css">
+</head>
+
+<body>
+    <header>
+        <ul>
+            <a href="home.html"><li class="mainLi">Home</li></a>
+            <li class="mainLi" onclick="swapPageSection('home.html', 'about')"><a>About</a></li>
+            <li class="mainLi" onclick="toggleDropDown('dropdown1')"><a>Projects <i class="fa-solid fa-caret-down"></i></a>
+                <ul class="dropdown" id="dropdown1">
+                    <li class="secondaryLi"><a href="resume.html">Resume</a></li>
+                    <li class="secondaryLi"><a href="cover-letter.html">Cover Letter</a></li>
+                    <li class="secondaryLi"><a href="correspondence.html">Correspondence</a></li>
+                    <li class="secondaryLi"><a href="infographic.html">Infographic</a></li>
+                    <li class="secondaryLi"><a href="tutorial.html">Tutorial Video</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+
+    
+    <div id="projectBody">
+        <h2>Infographic</h2>
+        <br><br>
+            <div class="card cols skinny-col left-skinny-col">
+                <h4>Document</h4>
+                <br>
+                <a href="https://drive.google.com/file/d/1qufsbY2hiyBpEp-zRMWz-D5L4IY658fS/view?usp=sharing" target="_blank"><img src="imgs/tech-infographic.png" alt="a green infographic about caring for mental health"></a>
+                <br><br>
+                <p><a href="https://docs.google.com/document/d/1m0p-eYbAF8IepiRG-bOTcp0p06HIOt7SuR3Kej1L1j0/edit?usp=drive_link" target="_blank">(click to open in new tab)</a></p><br>
+            </div>
+            <div class="card cols wide-col right-wide-col">
+                <h4>Description</h4>
+                <br>
+                <p>For this assignment, I was tasked with creating an infographic on any topic, so long as it was clear and visually appealing. I chose to discuss ways to care for one's mental health.</p>
+                <br><br>
+                <h4>Reflection</h4>
+                <br>
+                <p>The main challenge that I encountered in this assignment was physically fitting all of the text onto the page in a legible font size, or deciding what to remove. I overcame this difficulty by carefully selecting a medium font size, then adjusting the formatting until I was satisfied. I decided to remove additonal text and paraphrase it if it still would not fit after the reformatting.</p>
+                <br>
+                <p>I learned that graphic design is far more difficult than people give it credit for. There is a thin line between conciseness and crowdedness that is very easy to trample. Additionally, I learned that I enjoy color and coming up with palettes.</p>
+            </div>
+        
+    </div>
+    
+    <script src="techScripts.js"></script>
+    <script src="https://kit.fontawesome.com/c122dadac2.js" crossorigin="anonymous"></script>
+</body>
+</html>

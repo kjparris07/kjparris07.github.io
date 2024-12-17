@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KP Portfolio</title>
+    <link rel="stylesheet" href="techStyles.css">
+</head>
+
+<body>
+    <header>
+        <ul>
+            <a href="home.html"><li class="mainLi">Home</li></a>
+            <li class="mainLi" onclick="swapPageSection('home.html', 'about')"><a >About</a></li>
+            <li class="mainLi" onclick="toggleDropDown('dropdown1')"><a>Projects <i class="fa-solid fa-caret-down"></i></a>
+                <ul class="dropdown" id="dropdown1">
+                    <li class="secondaryLi"><a href="resume.html">Resume</a></li>
+                    <li class="secondaryLi"><a href="cover-letter.html">Cover Letter</a></li>
+                    <li class="secondaryLi"><a href="correspondence.html">Correspondence</a></li>
+                    <li class="secondaryLi"><a href="infographic.html">Infographic</a></li>
+                    <li class="secondaryLi"><a href="tutorial.html">Tutorial Video</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+
+    
+    <div id="projectBody">
+        <h2>Resume</h2>
+        <br><br>
+            <div class="card cols wide-col left-wide-col">
+                <h4>Description</h4>
+                <br>
+                <p>For this assignment, I was tasked with creating a resume — a brief written summary of one’s qualifications,  academic history, and work background. </p>
+                <br><br>
+                <h4>Reflection</h4>
+                <br>
+                <p>The main challenge that I encountered in the process of creating this resume was keeping consistent verb tenses and formatting, since this basic resume has gone through a variety of changes throughout the years. I overcame this challenge by reading through and reviewing the resume with a discerning eye, as well as showing it to others for them to review. </p>
+                <br>
+                <p>I learned that resume writing requires active verbs and specific, measurable accomplishments. I learned that I do actually have these accomplishments, I just have to consider each job position more carefully. </p>
+            </div>
+            
+            <div class="card cols skinny-col right-skinny-col">
+                <br>
+                <h4>Document</h4> <br>
+                <a href="https://drive.google.com/file/d/1hsrNDENpQbci-ZeSvgfBUhuVq-M51OZB/view?usp=drive_link" target="_blank"><img src="imgs/Kyra_Parris_Resume.jpg" alt="a screenshot of a resume"></a>
+                
+                <p><a href="https://drive.google.com/file/d/1hsrNDENpQbci-ZeSvgfBUhuVq-M51OZB/view?usp=drive_link" target="_blank">(click to open in new tab)</a></p>
+                <br>
+            </div>
+        
+    </div>
+    
+    <script src="techScripts.js"></script>
+    <script src="https://kit.fontawesome.com/c122dadac2.js" crossorigin="anonymous"></script>
+</body>
+</html>

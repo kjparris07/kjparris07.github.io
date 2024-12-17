@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KP Portfolio</title>
+    <link rel="stylesheet" href="techStyles.css">
+</head>
+
+<body>
+    <header>
+        <ul>
+            <a href="home.html"><li class="mainLi">Home</li></a>
+            <li class="mainLi" onclick="swapPageSection('home.html', 'about')"><a>About</a></li>
+            <li class="mainLi" onclick="toggleDropDown('dropdown1')"><a>Projects <i class="fa-solid fa-caret-down"></i></a>
+                <ul class="dropdown" id="dropdown1">
+                    <li class="secondaryLi"><a href="resume.html">Resume</a></li>
+                    <li class="secondaryLi"><a href="cover-letter.html">Cover Letter</a></li>
+                    <li class="secondaryLi"><a href="correspondence.html">Correspondence</a></li>
+                    <li class="secondaryLi"><a href="infographic.html">Infographic</a></li>
+                    <li class="secondaryLi"><a href="tutorial.html">Tutorial Video</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+
+    
+    <div id="projectBody">
+        <h2>Correspondence</h2>
+        <br><br>
+        <h3>Memo</h3>
+        <br><br>
+            <div class="card cols two-equal-cols left-col">
+                <h4>Description</h4>
+                <br>
+                <p>For this assignment, I was tasked with creating a memo for the following scenario:</p> <br>
+                <p><em>"As the resident computer technician, you have installed a new software program on the company computers. Write a memo to all staff, including your managers, letting them know that they need to come to see you for a 30-minute training and information session within the next week. Be sure to include what times you are available as well as where and how you can be reached."</em></p>
+                <br><br><br>
+                <h4>Reflection</h4>
+                <br>
+                <p>The main challenge that I encountered in the process of creating this memo was including enough detail about a fictitious scenario to make it seem believable. I overcame this challenge by simply pretending I was truly in the situtation.</p>
+                <br>
+                <p>I learned that there were tiers of correspondence, depending on desired formality, and that memos are more formal than emails. I also learned that I prefer to write an email over a memo, mostly because of the expected level of formality.</p>
+                <br>
+            </div>
+            
+            <div class="card cols two-equal-cols right-col">
+                <h4>Document</h4> <br>
+                <a href="https://docs.google.com/document/d/1dXdmvNBtg39RGRpc6FgYA-Gc6Sociy0_u1x5uSJXzbI/edit?usp=drive_link" target="_blank"><img src="imgs/Memo.png" alt="a screenshot of a memo"></a>
+                
+                <p><a href="https://docs.google.com/document/d/1dXdmvNBtg39RGRpc6FgYA-Gc6Sociy0_u1x5uSJXzbI/edit?usp=drive_link" target="_blank">(click to open in new tab)</a></p>
+                <br>
+            </div>
+            <br>
+            <hr>
+            <br><br>
+            <h3>Emails</h3>
+            <br><br>
+            <div class="card cols two-equal-cols left-col">
+                <h4>Description</h4>
+                <br>
+                <p>For this assignment, I was tasked with writing three emails, one of which was to thank an interviewer after an interview. </p>
+                <br><br>
+                <h4>Reflection</h4>
+                <br>
+                <p>The main challenge that I encountered in this assignment was being specific enough about an interview that did not actually occur. I had to come up with a few topics we "discussed" to recall when writing the email.</p>
+                <br>
+                <p>I learned that emails should include more in the signature than just a name (for example: a title). I also learned a few tips about the actually process of sending an email, like adding in the recipient at the end to prevent premature submissions.</p>
+                <br>
+                <p>Additionally, I learned that I am stronger at writing email than I expected.</p>
+            </div>
+            <div id="email" class="card cols two-equal-cols right-col">
+                <h4>#1</h4>
+                <br><br>
+                <p>Dear Professor Moore,</p>
+                <br>
+                <p>I hope your week is going well. I am writing to thank you for interviewing me today for the position of Software Developer Intern. I enjoyed meeting you and learning about the daily operations of the position.</p>
+                <br>
+                <p>I particularly appreciated your questions about recursion and database management systems. They truly grounded my academic knowledge in real-life applications and I am well-suited to apply this knowledge to the work in the internship position for your company.</p>
+                <br>
+                <p>Thank you again for taking the time to meet with me today. Feel free to reach out to me via phone or email if you have any questions or would like any additional information. I look forward to hearing from you soon.</p>
+                <br>
+                <p>Sincerely,</p>
+                <p>Kyra Parris<br>Candidate for a Bachelor of Arts in Fine Arts and Computer Science<br>parrisk@kean.edu<br>123-456-7890</p>
+                <br>
+
+            </div>
+        
+    </div>
+    
+    <script src="techScripts.js"></script>
+    <script src="https://kit.fontawesome.com/c122dadac2.js" crossorigin="anonymous"></script>
+</body>
+</html>

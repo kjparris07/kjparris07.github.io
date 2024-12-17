@@ -3,10 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kyra Parris Portfolio</title>
+    <title>KP Portfolio</title>
+    <link rel="stylesheet" href="techStyles.css">
 </head>
+
 <body>
-    <h1>Kyra Parris</h1>
-    <h2>Technical Writing Portfolio</h2>
+    <header>
+        <ul>
+            <a><li class="mainLi" onclick="scrollToElement('headshot-col')">Home</li></a>
+            <li class="mainLi" onclick="scrollToElement('about')"><a >About</a></li>
+            <li class="mainLi" onclick="toggleDropDown('dropdown1')"><a>Projects <i class="fa-solid fa-caret-down"></i></a>
+                <ul class="dropdown" id="dropdown1">
+                    <li class="secondaryLi"><a href="resume.html">Resume</a></li>
+                    <li class="secondaryLi"><a href="cover-letter.html">Cover Letter</a></li>
+                    <li class="secondaryLi"><a href="correspondence.html">Correspondence</a></li>
+                    <li class="secondaryLi"><a href="infographic.html">Infographic</a></li>
+                    <li class="secondaryLi"><a href="tutorial.html">Tutorial Video</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+
+    
+    
+    <div class="pages"> 
+        <div id="headshot-col"  class="left-col">
+            <img  id="headshot" src="imgs/headshot.png" alt="an image of a black person with a buzzcut">
+        </div>
+        <div id="heading-col" class="right-col">
+            <div id="headings">
+                <h1>KYRA PARRIS</h1> <br><br>
+                <h2>Technical Writing Portfolio</h2><br>
+                <h3>Section 02</h3><br>
+                <h3>Fall 2024</h3>
+            </div>
+        </div>
+    </div>
+    
+    <div class="pages">
+        <div id="about">
+            <h3>About</h3>
+            <br><br>
+            <p>I am currently pursuing a Bachelor of Arts in both Computer Science and Fine Arts with a strong academic record (Dean’s Honor List, GPA: 3.94). With a unique blend of technical and creative skills, I bring strong problem-solving, critical thinking, and creativity to every project. </p>
+            <br><br>
+            <p>I am eager to apply my skills at the intersection of technology and art and am actively seeking internships that allow me to explore innovative solutions within these fields.</p>
+        </div>
+    </div>
+    
+    
+    
+    
+    <script src="techScripts.js"></script>
+    <script src="https://kit.fontawesome.com/c122dadac2.js" crossorigin="anonymous"></script>
 </body>
 </html>
